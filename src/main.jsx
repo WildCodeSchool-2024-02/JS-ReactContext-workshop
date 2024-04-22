@@ -5,7 +5,6 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import './index.css'
 import Home from './pages/Home.jsx'
 import Detail from './pages/Detail.jsx'
-import ThemeProvider from './context/theme/provider.jsx'
 
 const routes = createBrowserRouter([
   {
@@ -27,8 +26,6 @@ const routes = createBrowserRouter([
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <ThemeProvider>
-      <RouterProvider router={routes} />
-    </ThemeProvider>
+    <RouterProvider router={routes} />
   </React.StrictMode>
 );
