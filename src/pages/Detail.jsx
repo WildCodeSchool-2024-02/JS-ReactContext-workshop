@@ -1,12 +1,11 @@
 import { useLoaderData } from "react-router-dom";
-import { useContext } from "react";
 import Product from "../components/Product";
-import themeContext from "../context/theme/context";
+import useTheme from "../context/theme/context";
 
 function Detail() {
 
   const product = useLoaderData();
-  const { theme } = useContext(themeContext);
+  const { theme } = useTheme();
 
   return (
     <main className={`detail ${theme}`}>

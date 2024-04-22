@@ -1,6 +1,6 @@
 import { useState } from "react";
+import { themeContext } from "./context";
 import PropTypes from "prop-types";
-import themeContext from "./context";
 
 function ThemeProvider({ children }) {
   const [theme, setTheme] = useState("dark");
@@ -13,7 +13,7 @@ function ThemeProvider({ children }) {
 }
 
 ThemeProvider.propTypes = {
-  children: PropTypes.func,
+  children: PropTypes.any,
 };
 
 export default ThemeProvider;

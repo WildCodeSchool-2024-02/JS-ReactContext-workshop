@@ -1,12 +1,11 @@
 import '../assets/css/navbar.css';
-import { useContext } from 'react';
 import { useNavigate } from 'react-router-dom';
-import themeContext from '../context/theme/context';
+import useTheme from '../context/theme/context';
 
 function Navbar() {
   
 
-  const { theme, setTheme } = useContext(themeContext);
+  const { theme, setTheme } = useTheme();
   const navigate = useNavigate();
 
   return (
