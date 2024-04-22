@@ -2,7 +2,7 @@
 
 ## Introduction
 The objective of this workshop is to discover the notion of context in React with the implementation of a theme manager to switch from a light mode to a dark mode and vice versa.
-![darkmodegif](https://miro.medium.com/v2/resize:fit:1100/format:webp/1*WGVhdwmjCfPSacx-xixFhA.gif)
+![darkmodegif](./src/assets/exemple.gif)
 
 ## Steps
 - 1/ Create and export context objects and provider components in contexts/theme.js
